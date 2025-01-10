@@ -1,0 +1,58 @@
+@import 'components/theme';
+
+/* //////////////////  Simple Content   //////////////////*/
+.quote {
+    background-color: $light-blue-color;
+    display: grid;
+    justify-content: center;
+    margin: 40px 0;
+    width: 100%;
+
+    &__inner {
+        color: $blue-color;
+        display: grid;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        grid-template-columns: 50px auto 50px;
+        line-height: 30px;
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 30px 10px;
+
+        @media (min-width: $vertical-tablet) { 
+            font-size: 24px;
+            grid-template-columns: 100px auto 100px;
+            line-height: 36px;
+        }
+
+        .quote-name {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            text-align: right;
+
+            @media (min-width: $vertical-tablet) { 
+                font-size: 30px;
+            }
+        }
+
+        .quote-mark {
+            display: grid;
+            justify-content: center;
+
+            img {
+                width: 34px;
+                height: 25px;
+
+                @media (min-width: $vertical-tablet) { 
+                    width: 68px;
+                    height: 50px;
+                }
+    
+            }
+
+            
+        }
+    }
+}

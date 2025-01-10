@@ -1,0 +1,146 @@
+@import 'components/theme';
+
+/* ///////////////// NAVIGATION /////////////// */
+
+#menu-main-menu li {
+	@media (min-width: $horizontal-tablet) { 
+		margin-right: 40px;
+	}
+}
+
+#menu-main-menu li ul li {
+	margin-right: 0;
+}
+
+#menu-main-menu li ul li:hover {
+	background-color: $dark-blue-color;
+}
+
+nav {
+	color: white;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	width: 100vw;
+
+	@media (min-width: $menu-breakpoint) { 
+		max-width: 800px;
+	}
+	
+	@media (min-width: $horizontal-tablet) { 
+		max-width: 1050px;
+	}
+}
+
+.navbar {
+	padding: 0px;
+}
+
+.navbar-collapse {
+	background-color: $blue-color;
+	min-width: 200px;
+	z-index: 10;
+}
+
+.navbar-light .navbar-toggler {
+	background-color: white;
+	margin: 12px 10px;
+}
+
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+	
+	color: white;
+	text-decoration: none;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding: 10px 15px;
+	text-decoration: none;
+
+	@media (max-width: $vertical-tablet) {
+		border-top: 1px solid white;
+	}
+
+	@media (min-width: $vertical-tablet) {
+		padding: 20px 15px;
+	}
+
+	@media (min-width: $horizontal-tablet) {
+		border-top: none;
+		text-decoration: none;
+	}
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	background-color: $orange-color;
+	color: white;
+  }
+
+.dropdown-menu {
+	background-color: $blue-color;
+	border-top: none;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+
+	@media (min-width: $horizontal-tablet) { 
+		background-color: $blue-color;
+		background-clip: padding-box;
+		display: none;
+		left: 0;
+		margin: 0 0 0 -1px;
+		min-width: 10rem;
+		padding: 0 0 .5rem 0;
+		position: absolute;
+		text-align: left;
+		top: 100%;
+		z-index: 1000;
+	}
+}
+
+.navbar-light .navbar-nav .dropdown-menu .nav-link, 
+.navbar-light .navbar-nav .dropdown-menu .active>.nav-link, 
+.navbar-light .navbar-nav .dropdown-menu .nav-link.active, 
+.navbar-light .navbar-nav .dropdown-menu .nav-link.show, 
+.navbar-light .navbar-nav .dropdown-menu .show>.nav-link {
+	border-top: 1px solid white;
+	color: white;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding: 7px 10px 7px 10px;
+
+	&:first-child {
+		border-top: none;
+	}
+}
+
+.dropdown-menu.show {
+	display: block;
+  }
+
+.dropdown-menu li {
+	margin-right: 0px;
+}
+
+.dropdown-item {
+	border-top: 1px solid white;
+	clear: both;
+	display: block;
+	color: white;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px 15px 10px 20px;
+	text-decoration:none;
+	text-align: inherit;
+	width: 100%;
+	white-space: nowrap;	
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	color: white;
+	text-decoration: none;
+	background-color: $orange-color;
+  }
