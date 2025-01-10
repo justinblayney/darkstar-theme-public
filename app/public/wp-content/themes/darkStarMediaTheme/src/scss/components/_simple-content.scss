@@ -1,0 +1,42 @@
+@import 'components/theme';
+
+/* //////////////////  Simple Content   //////////////////*/
+.simple-content {
+    padding: 5px 0 20px;
+
+    &__wrap {
+        padding: 0 10px;
+        margin: 20px auto 0;
+        max-width: 1180px;  
+    
+        .darkstar-logo {
+            width: 125px;
+            height: 125px;
+    
+            @media (min-width: $vertical-tablet) { 
+                width: unset;
+                height: unset;
+            }
+        }
+
+        .client-logos,
+        .client-names {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            @media (min-width: $mobile) { 
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (min-width: $horizontal-tablet) { 
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        .client-names {
+            font-size: 14px;
+            gap: 20px;
+        }
+    }
+    
+}

@@ -1,0 +1,114 @@
+.portfolio {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin: 20px auto 0;
+    max-width: 1180px;
+
+    @media (min-width: $vertical-tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $horizontal-tablet) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        background-position: center;
+        background-size: cover;
+        margin: 0 10px 20px;
+        min-height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        &-caption {
+            align-content: center;
+            background: rgba(4,52,112,.9) none repeat scroll 0% 0%;
+            border-top: #fff 1px solid;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: auto 70px;
+            height: 70px;
+            left: 0;
+            padding-top: 0;
+            right: 0;
+            text-align: left;
+
+            &:hover {
+                background-color: $orange-color;
+
+            }
+
+            .btn-text {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 20px;
+            }
+
+            .btn-wrap {
+                align-content: center;  
+                background-color: $orange-color;
+                display: grid;
+                height: 70px;
+                justify-content: center; 
+                width: 70px;
+
+                img {
+                    
+                    height: 60px; 
+                    
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    &__item::before {
+        background-color: rgba(0, 0, 0, 0.65);
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__item-background {
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 a {
+        align-content: center;
+        display: grid;
+        color: white;
+        font-size: 34px;
+        height: 300px;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
+.single-portfolio-wrap {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin: 20px auto 0;
+    max-width: 1180px;
+    padding: 0 10px;
+
+    &__image {
+        display: grid;
+        justify-content: center;
+        margin: 20px 0 40px;
+
+    }
+}

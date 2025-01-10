@@ -1,0 +1,120 @@
+@import 'components/theme';
+
+/* //////////////////  Reviews   //////////////////*/
+.reviews {
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        margin: 40px auto 0;
+        max-width: 1180px;  
+    }
+
+    &__toc {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px; /* Adjust as needed */
+        grid-template-areas:    "logo"
+                                "toc";
+
+        @media (min-width: $vertical-tablet) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:    "toc    logo";
+        }
+
+        .toc-logo {
+            display: grid; 
+            grid-area: logo;
+           
+            @media (min-width: $vertical-tablet) {
+                margin: 0 auto;
+            }
+        }
+    
+        .toc-content {
+            grid-area: toc;
+        }
+    }
+
+    &__pros-cons {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        margin: 15px 0;
+
+        @media (min-width: $vertical-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .wrap {
+            border: 1px solid $very-light-grey;
+        }
+
+        .heading {
+            background-color: $orange-color;
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px 25px;
+        }
+
+        ul {
+            margin: 10px 5px 10px 0;
+            list-style-type: disc;
+            font-size: 18px;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .reviews__stars {
+        position: relative;
+        display: inline-block;
+    
+        .star-rating {
+            position: relative;
+            width: 200px; /* Match SVG width */
+            height: 38.5px; /* Match SVG height */
+    
+            .stars-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /* Full size for grey stars */
+                height: 100%;
+                z-index: 1;
+            }
+    
+            .stars-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px; /* Always full size */
+                height: 38.5px; /* Match SVG height */
+                overflow: hidden; /* Ensure clipping */
+                z-index: 2;
+    
+                img {
+                    width: 200px; /* Full size for orange stars */
+                    height: 38.5px;
+                }
+            }
+        }
+    }
+    
+    &__opening,
+    &__toc,
+    &__body,
+    &__pricing,
+    &__stars,
+    &__pros-cons,
+    &__summary {
+        margin-bottom: 20px;
+    }
+
+    
+}
+

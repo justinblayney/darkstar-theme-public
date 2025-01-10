@@ -1,0 +1,86 @@
+@import 'components/theme';
+
+/* ///////////////// BUTTONS ///////////////// */
+
+
+.btn-request {
+    padding: 0;
+    display: block;
+    width: 250px;
+    height: 33px;
+    background: url(images/btn-request-sm.png) bottom;
+    text-indent: -99999px;
+
+    @media (min-width: $vertical-tablet) {
+        background: url(images/btn-request.jpg) bottom;
+        width: 431px;
+        height: 57px;
+	}
+}
+
+.btn-search {
+    border: none;
+    padding: 0;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(images/icon-search-site.png) bottom;
+    text-indent: -99999px;
+}
+
+.btn-request:hover,
+.btn-search:hover{
+    background-position: 0 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrap-shortcode {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-shortcode {
+    align-items: center;
+    background: $btn-yellow-light;
+    background: linear-gradient(180deg, $btn-yellow-light 24%, $btn-yellow-dark 95%); 
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+    height: 44px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 6px 20px;
+    text-decoration: none;
+    width: 260px;
+
+    &:hover {
+        background: $btn-yellow-dark;
+        background: linear-gradient(0deg, $btn-yellow-dark 24%, $btn-yellow-light 95%); 
+        color: white;
+
+    }
+
+    @media (min-width: $vertical-tablet) { 
+        border-radius: 5px;
+        font-size: 30px;
+        height: 64px;
+        padding: 10px 20px;
+        width: 566px;
+
+    }
+}
+
+.btn-shortcode.small {
+    @media (min-width: $vertical-tablet) { 
+        border-radius: 5px;
+        font-size: 20px;
+        height: 44px;
+        padding: 6px 20px;
+        width: 260px;
+    }
+}

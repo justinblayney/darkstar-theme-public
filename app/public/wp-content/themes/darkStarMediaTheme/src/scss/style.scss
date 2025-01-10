@@ -1,0 +1,28 @@
+/*
+Theme Name: Darkstar Media Theme
+Theme URI: http://darkstarmedia.net/
+Author: DarkstarMedia
+Author URI: http://darkstarmedia.net/
+Description: Hi, I am the ultra minimal starter theme darkStarMediaTheme, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
+Version: 1.1.9
+License: GNU General Public License v3.0 /
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: gray, light, two-columns, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, sticky-post,  theme-options, threaded-comments, translation-ready
+*/
+
+@import 'components/reset';
+@import 'components/theme';
+@import 'components/fonts';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/breadcrumbs';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/content';
+@import 'components/portfolio';
+@import 'components/recent-news';
+@import 'components/quote';
+@import 'components/simple-content';
+@import 'components/two-column-content';
+@import 'components/blog';
+@import 'components/reviews';

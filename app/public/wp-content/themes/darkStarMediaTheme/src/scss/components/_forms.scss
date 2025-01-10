@@ -1,0 +1,131 @@
+@import 'components/theme';
+
+/*  ///////////////// FORMS /////////////////  */
+
+.form-control {
+    display: block;
+    width: auto;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: white;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+input[type=button] {
+	background-color: #51827d;
+}
+
+input[type=button]:hover {
+	background-color: #f7941d
+}
+ 
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: block;
+    border: #51827d 1px solid;
+    padding: 5px;
+}
+.search-field {
+    margin-left: 15px;
+}
+
+.wpcf7-form-control input {
+	display: initial;
+}
+
+.wpcf7-form .myButtonLink {
+	height: 43px;
+	width: 214px;
+	padding: 0 110px 0 0;
+}
+
+span.wpcf7-list-item { 
+	display: block;
+}
+.wpcf7-form input[type="text"], input[type="email"], 
+input[type="url"], input[type="password"], input[type="search"], 
+input[type="number"], input[type="tel"], input[type="range"], 
+input[type="date"], input[type="month"], input[type="week"],
+input[type="time"], input[type="datetime"], input[type="datetime-local"],
+input[type="color"], select, textarea {
+    width:100% !important;
+}
+
+
+.wpcf7-list-item-label input[checkbox] {
+	margin-right: 10px;
+}
+
+.wpcf7-submit {
+	font-size: 100%;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	overflow: visible;
+	padding: .618em 1em;
+	border-radius: 3px;
+	left: auto;
+	color: white;
+	background-color: $blue-color;
+	border: 0;
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+ }
+ 
+ .wpcf7-submit:hover {
+	background-color: $blue-color;
+ }
+
+.search-field {
+	margin-left: 0;
+}
+
+.searchboxes {
+	display:inline-block;
+	float:left;
+	margin: 5px 5px 40px 0;
+}
+
+.searchboxesSM {
+	display: inline-block;
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+
+.search-label {
+	display: block;	
+}
+
+.strongspec {
+	font-weight: 600;
+}
+
+
+.search-box {
+	max-width: 150px;
+}
+	
+	
+.widget_search .search-box {
+	float: center;
+	max-width: 100%;
+}
+
+.widget_search .search-form {
+	float:center !important;
+}

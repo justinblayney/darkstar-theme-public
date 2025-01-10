@@ -1,0 +1,340 @@
+@import 'components/theme';
+
+/* //////////////////  CONTENT   //////////////////*/
+
+html, body {
+    scroll-padding-top: 80px; 
+}
+
+body {
+    color: $dark-grey;
+    word-wrap: break-word;
+    font: $body-copy;
+}
+
+.main-content {
+    margin-top: 100px;
+
+    @media (min-width: $vertical-tablet) { 
+        margin-top: 80px;
+    }
+}
+
+.main-content-inner {
+    padding-bottom: 1em;
+}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.sticky {
+    display: block;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.sidebar{
+	padding-top: 25px;
+	
+}
+
+.entry-meta{
+	font-size: 12px;
+	font-style: italic;
+}
+
+.brown-border {
+    margin: 15px 0;
+    background-image: url("images/brown-border.png");
+    background-repeat: space;
+    height: 15px;
+  }		
+
+.page-title {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    padding: 0 10px;
+
+    span {
+        margin-left: 10px;
+    }
+
+}
+
+.wrap-heading-outside {
+    display: block;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.h1, h1 {
+    color: $blue-color;
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin: 10px auto;
+    max-width: 1180px;
+
+    @media (min-width: $small-mobile) { 
+        font-size: 36px;
+    }
+    
+    @media (min-width: $vertical-tablet) { 
+        font-size: 42px;
+    }
+}
+   
+.h1 a, h1 a {
+	text-decoration:none;
+}
+
+
+
+h2, .h2 {
+    color: $blue-color;
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+	margin: 0 0 10px 0;
+    scroll-padding-top: 100px; 
+
+    @media (min-width: $small-mobile) { 
+        font-size: 30px;
+    }
+    
+    @media (min-width: $vertical-tablet) { 
+        font-size: 40px;
+    }
+}
+
+.h3, h3, h3 a {
+    color: $blue-color;
+    font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+	text-decoration:none;
+
+    @media (min-width: $small-mobile) { 
+        font-size: 26px;
+    }
+    
+    @media (min-width: $vertical-tablet) { 
+        font-size: 32px;
+    }
+}
+
+h3 a:HOVER {
+	color: $light-blue-color;
+	text-decoration:none;
+}
+
+.h4, h4 {
+	font-family: 'Raleway', sans-serif;
+    color: $blue-color;
+	margin: 0 0 10px 0;
+	font-size: 20px;
+    font-weight: 500;
+}
+
+.h5, h5 {
+	font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+	margin: 0 0 10px 0;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 80px;
+  }
+  
+
+.clients-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+.featured-image {
+    margin: 10px auto;
+    max-width: 1180px;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1180px;
+}
+
+.container-fluid {
+    padding: 0 15px;
+	max-width: 100%;
+}
+
+a {
+	text-decoration:none;
+    color: $orange-color;
+}
+	
+a:hover{
+    color: $orange-color;
+	text-decoration: underline;
+}
+
+.errorsmg {
+	color: #FF0004;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrap-standard-page {
+    padding: 0 10px;
+    margin: 40px auto 0;
+    max-width: 1180px;  
+}
+
+.pro-cons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/* //////////////////  ALIGNMENT  ////////////////// */
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* IMAGES AND WP-CAPTIONS should always fit and be responsive */
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+
+img[class*="wp-image-"] {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-image {
+    float: left !important;
+    width: 100%;
+    padding: 10px;
+    margin: 0 !important; /* Removes any inline margins */
+    box-sizing: border-box;
+
+    @media (min-width: $vertical-tablet) { 
+        float: right !important;
+        width: 375px;
+        padding: 10px;
+    }
+}
+
+.wp-caption {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.wp-caption.aligncenter {
+    margin-bottom: 10px;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+}
+
+.wp-caption .wp-caption-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.entry-content{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.entry-content-thumbnail{
+	margin-bottom: 20px;}
+
+
+/* Make sure embeds and iframes fit their containers */
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+
+/* Text meant only for screen readers */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */
+}
+
+/* ////////////////// CLEARING  //////////////////  */
+
+.clear {
+    clear: both;
+}
+
+/**
+* Some WP Theme Repository requirements
+*/
+
+.entry-meta {
+    clear: both;
+}

@@ -1,0 +1,95 @@
+@import 'components/theme';
+
+/*  ///////////////// HEADER  ///////////////// */
+
+.admin-bar .fixed-top {
+	margin-top: 30px;
+}
+
+#masthead {
+	background-color: $blue-color;
+	background-position:top;
+	background-repeat:repeat-x;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	display:block;
+	min-height: 55px;
+	-webkit-box-shadow: 0 8px 6px -6px #020202;
+		box-shadow: 0 8px 6px -6px  $drop-shadow;
+
+	.wrap-content {
+		display: grid;
+		max-width: 1180px;
+		margin: 0 auto;
+	
+		.btn-search-wrap {
+			display: grid;
+			z-index: 1100;
+
+			button {
+				justify-self: right;
+				margin-right: 10px;
+				position: fixed;
+				right: 10px;
+				top: 15px;
+
+				@media (min-width: $vertical-tablet) { 
+					margin-top: -40px; // safari BS
+					position: relative;
+					right: 10px;
+					top: 5px;
+				}
+			}
+	
+			.collapse {
+				.card {
+					background-color: $light-blue-color;
+
+					.search-field{
+						background-color: white;
+						border-color: $light-grey;
+						border-radius: 5px;
+						width: 100%;
+					}
+				}
+			} 
+		}
+	}
+	
+	.collapse navbar-collapse {
+		float: right;
+	}
+
+	.wrap-navigation {
+		display: grid;
+		grid-template-columns: 1fr auto; 
+
+			.header-logo {
+				align-items: center;
+				background-color: white;
+				display: grid;
+				justify-items: center;
+				padding: 6px 20px;
+				position: fixed;
+				right: 0px;
+				top: 0px;
+				z-index: 11;
+
+				@media (min-width: $vertical-tablet) { 
+					padding: 5px 20px;
+				}
+
+				@media (min-width: $small-desktop) {
+					position: unset;
+				}
+
+				img {
+					height: 55px;
+					width: 90px;
+					max-width: unset;
+				}
+			}
+	}
+
+}
+

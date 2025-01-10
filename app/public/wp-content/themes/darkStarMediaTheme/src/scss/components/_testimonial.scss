@@ -1,0 +1,77 @@
+@import 'components/theme';
+
+/* //////////////////  testimonial   //////////////////*/
+.testimonial {
+    border-bottom: 1px solid $very-light-grey;
+    display: grid;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+
+    h3 {
+        font-style: italic;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    &__inner {
+        color: black;
+        display: grid;
+        grid-template-areas:    "testimonial"
+                                "name"
+                                "image";
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 0 10px 30px;
+
+        @media (min-width: $vertical-tablet) { 
+            font-size: 24px;
+            grid-template-areas:    "testimonial    image"
+                                    "name           image";
+            grid-template-columns:  auto             200px;
+            line-height: 36px;
+        }
+
+        &-testimonial {
+            grid-area: testimonial;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+
+            @media (min-width: $vertical-tablet) { 
+                font-size: 18px;
+            }
+        }
+
+        &-name {
+            grid-area: name;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1;
+            text-align: right;
+
+            @media (min-width: $vertical-tablet) { 
+                font-size: 22px;
+            }
+
+            i {
+                font-size: 80%;
+            }
+        }
+
+        &-image {
+            align-items: center;
+            display: grid;
+            grid-area: image;
+            justify-items: center;
+        }
+
+    }
+}
+

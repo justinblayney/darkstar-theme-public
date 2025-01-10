@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "OpenSans";
+	src: url("/wp-content/themes/darkStarMediaTheme/fonts/OpenSans-VariableFont_wdth.woff2") format("woff2"),
+	  url("/wp-content/themes/darkStarMediaTheme/fonts/OpenSans-VariableFont_wdth.ttf") format("truetype"); /* Fallback to TTF */
+	font-weight: 100 900;
+	font-style: normal;
+  }
+  
+
+@font-face {
+	font-family: "Raleway";
+	src: url("/wp-content/themes/darkStarMediaTheme/fonts/Raleway-VariableFont_wght.woff2") format("woff2"),
+	  url("/wp-content/themes/darkStarMediaTheme/fonts/Raleway-VariableFont_wght.ttf") format("truetype"); /* Fallback to TTF */
+	font-weight: 100 900;
+	font-style: normal;
+  }
+  
+  $heading-font: "Raleway", sans-serif;
+  $body-font: "OpenSans", sans-serif;
+  
+  $body-copy: 400 18px/26px $body-font;

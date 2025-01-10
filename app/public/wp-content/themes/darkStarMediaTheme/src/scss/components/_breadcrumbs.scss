@@ -1,0 +1,33 @@
+@import 'components/theme';
+
+/* //////////////////  Breadcrumbs   //////////////////*/
+.breadcrumbs {
+    padding: 0 10px;
+    margin: -20px auto 0 auto;
+    max-width: 1180px;
+
+    @media (min-width: $vertical-tablet) { 
+        margin: 0 auto 0 auto;
+    } 
+
+    .rank-math-breadcrumb { 
+        color: black;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        max-width: 99%;
+        padding-top: 0px;
+
+        @media (min-width: $vertical-tablet) { 
+            font-size: 18px;
+        } 
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }    
+}
