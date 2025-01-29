@@ -1,66 +1,16 @@
 # darkstar-theme-public
 
 This repository contains a **sample only** of the `darkstar-theme` WordPress theme and build. 
-You can follow instrutions below to get the WordPress site running locally, or just grab the theme files.
+You can set up using Local By Flywheel, or just grab the theme files.
 
 ---
 
-## Getting Started with Lando
-
-To get this site running in a local Lando environment, follow these steps:
-
-### 1. **Set Up Lando**
-Create a `lando.yml` file in the root of your project with the following configuration:
-
-name: darkstar-theme  
-recipe: wordpress  
-config:  
-  webroot: .  
-  database: mariadb  
-services:  
-  appserver:  
-    type: php:8.0  
-  database:  
-    type: mariadb  
-proxy:  
-  appserver:  
-    - darkstar-theme.lndo.site  
-tooling:  
-  npm:  
-    service: appserver  
-  composer:  
-    service: appserver  
-  wp:  
-    service: appserver  
-
-### 2. **Start and Rebuild Lando**
-Run the following commands to initialize your environment:
-
-lando start  
-lando rebuild -y  
-
-### 3. **Database Import**
-To import a WordPress database, use:
-
-lando db-import backup.sql  
-
-After importing, update URLs for your local environment:
-
-lando wp search-replace 'https://www.live-site.com' 'http://darkstar-theme.lndo.site' --skip-columns=guid  
-
-### 4. **Permalink Settings**
-Once everything is set up, visit **Settings > Permalinks** in the WordPress admin area and click **Save Changes** to regenerate `.htaccess` rules.
-
-### 5. **Accessing the Site**
-Visit `http://darkstar-theme.lndo.site` in your browser to view the theme in your local environment.
-
----
 
 ## Features and Tools
 
 ### 1. **Build Tools**
 - **Gulp**: Used for asset minification and optimization.
-- **Lando**: Utilized for local development environments.
+- **Local By Flywheel**: Utilized for local development environments.
 
 ### 2. **Dynamic Content with ACF**
 - **Advanced Custom Fields (ACF)** for dynamic content management.
