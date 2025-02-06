@@ -1,8 +1,15 @@
 <?php
 $remove_schema = get_sub_field('remove_schema'); // Checks if checkbox is checked
+
+// Generate a unique ID using the ACF row index to ensure it remains consistent in the loop
+$unique_id = 'testimonial-' . get_row_index();
 ?>
 
-<section class="testimonial" <?php if (!$remove_schema) echo 'itemscope itemtype="https://schema.org/Review"'; ?>>
+<section class="testimonial" <?php if (!$remove_schema) echo 'itemscope itemtype="https://schema.org/Review"'; ?> id="<?php echo esc_attr($unique_id); ?>">
+    <?php if (get_sub_field('heading')) : ?>
+        <h2><?php echo esc_html(get_sub_field('heading')); ?></h2>
+    <?php endif; ?>
+
     <?php if (get_sub_field('testimonial_heading')) : ?>
         <h3><?php echo get_sub_field('testimonial_heading'); ?></h3>
     <?php endif; ?>

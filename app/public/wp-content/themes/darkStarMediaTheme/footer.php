@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="site-info col-sm-12">
-                    <a href="https://www.darkstarmedia.net/" title="Wordpress Theme Developed by Darkstar Media">Wordpress Theme Developed by Darkstar Media</a><br><br>
+                    <a href="https://www.darkstarmedia.net/" title="Website Developed by Darkstar Media">Website Developed by Darkstar Media</a><br><br>
                 </div><!-- close .site-info -->
 
             </div>

@@ -1,4 +1,4 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  BLOG   //////////////////*/
 
@@ -138,7 +138,7 @@
                 &-btn  {  
                     color: $orange-color;
                     display: block;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: 'SourceSerif', serif;
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 1.2;

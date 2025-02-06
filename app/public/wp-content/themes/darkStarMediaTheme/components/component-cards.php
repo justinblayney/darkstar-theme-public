@@ -1,4 +1,13 @@
-<section class="cards-wrap">
+<?php
+// Generate a unique ID using the ACF row index to ensure it remains consistent in the loop
+$unique_id = 'cards-' . get_row_index();
+?>
+
+<section class="cards-wrap" id="<?php echo esc_attr($unique_id); ?>">
+    <?php if (get_sub_field('heading')) : ?>
+        <h2><?php echo esc_html(get_sub_field('heading')); ?></h2>
+    <?php endif; ?>
+
     <div class="cards">
         <?php if (have_rows('cards')):  ?>
             <?php while (have_rows('cards')) : the_row();
@@ -7,12 +16,12 @@
             ?>
                 <div class="cards__card">
                     <h3><?php echo get_sub_field('card_title');  ?></h3>
-                    <img src="<?php echo $image['url']; ?>"
-                        alt="<?php echo $image['alt'];  ?>"
-                        width="<?php echo $image['width'];  ?>"
-                        height="<?php echo $image['height'];  ?>" />
-
-
+                    <?php if (!empty($image) && is_array($image)) : ?>
+                        <img src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>"
+                            width="<?php echo esc_attr($image['width']); ?>"
+                            height="<?php echo esc_attr($image['height']); ?>" />
+                    <?php endif; ?>
 
                     <?php if (! empty(get_sub_field('card_text'))) {  ?>
                         <p><?php echo get_sub_field('card_text');  ?></p>

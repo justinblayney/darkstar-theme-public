@@ -7,15 +7,10 @@
   }
   
 
-@font-face {
-	font-family: "Raleway";
-	src: url("/wp-content/themes/darkStarMediaTheme/fonts/Raleway-VariableFont_wght.woff2") format("woff2"),
-	  url("/wp-content/themes/darkStarMediaTheme/fonts/Raleway-VariableFont_wght.ttf") format("truetype"); /* Fallback to TTF */
-	font-weight: 100 900;
-	font-style: normal;
-  }
-  
-  $heading-font: "Raleway", sans-serif;
-  $body-font: "OpenSans", sans-serif;
-  
-  $body-copy: 400 18px/26px $body-font;
+
+  @font-face {
+    font-family: "SourceSerif";
+    src: url("/wp-content/themes/darkStarMediaTheme/fonts/SourceSerif4Variable-Roman.otf.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}

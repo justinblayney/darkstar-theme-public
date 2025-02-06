@@ -1,14 +1,14 @@
 {
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-sass": "^6.0.0",
     "node-sass": "^7.0.1",
-    "sass": "^1.45.1"
+    "sass": "^1.83.4"
   },
   "devDependencies": {
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^8.0.0",
-    "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-webp": "^4.0.1"
   }

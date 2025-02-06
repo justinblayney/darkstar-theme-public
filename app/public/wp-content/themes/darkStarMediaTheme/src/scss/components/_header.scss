@@ -1,5 +1,4 @@
-@import 'components/theme';
-
+@use 'theme' as *;
 /*  ///////////////// HEADER  ///////////////// */
 
 .admin-bar .fixed-top {
@@ -46,7 +45,6 @@
 					background-color: $light-blue-color;
 
 					.search-field{
-						background-color: white;
 						border-color: $light-grey;
 						border-radius: 5px;
 						width: 100%;
@@ -66,27 +64,36 @@
 
 			.header-logo {
 				align-items: center;
-				background-color: white;
 				display: grid;
 				justify-items: center;
 				padding: 6px 20px;
 				position: fixed;
 				right: 0px;
-				top: 0px;
+				top: 25px;
 				z-index: 11;
 
-				@media (min-width: $vertical-tablet) { 
-					padding: 5px 20px;
+				@media (min-width: $horizontal-tablet) { 
+					top: 15px;
 				}
 
 				@media (min-width: $small-desktop) {
-					position: unset;
+					top: 5px;
 				}
 
 				img {
-					height: 55px;
-					width: 90px;
+					height: 72px;
+					width: 200px;
 					max-width: unset;
+
+					@media (min-width: $horizontal-tablet) { 
+						height: 91px;
+						width: 250px;
+					}
+	
+					@media (min-width: $small-desktop) {
+						height: 108px;
+						width: 300px;
+					}
 				}
 			}
 	}

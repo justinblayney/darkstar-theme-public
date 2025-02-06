@@ -1,4 +1,9 @@
-<section class="reviews">
+<?php
+// Generate a unique ID using the ACF row index to ensure it remains consistent in the loop
+$unique_id = 'review-' . get_row_index();
+?>
+
+<section class="reviews" id="<?php echo esc_attr($unique_id); ?>">
 
     <div class="reviews__wrap">
 

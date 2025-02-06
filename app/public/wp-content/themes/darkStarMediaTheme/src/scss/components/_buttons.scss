@@ -1,4 +1,4 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* ///////////////// BUTTONS ///////////////// */
 
@@ -48,7 +48,7 @@
     border-radius: 5px;
     color: white;
     display: grid;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'SourceSerif', serif;
 	font-size: 16px;
 	font-weight: 800;
     height: 44px;

@@ -1,4 +1,4 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  Recent News Content   //////////////////*/
 .recent-news {
@@ -13,7 +13,7 @@
         text-align: center;
 
         @media (min-width: $horizontal-tablet) {
-            padding-left: 10px; 
+            padding: 0 10px 10px 10px;
             text-align: left;
         }
     }
@@ -126,7 +126,7 @@
                 &-btn  {  
                     color: $orange-color;
                     display: block;
-                    font-family: 'Raleway', sans-serif;
+                    font-family: 'SourceSerif', serif;
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 1.2;
