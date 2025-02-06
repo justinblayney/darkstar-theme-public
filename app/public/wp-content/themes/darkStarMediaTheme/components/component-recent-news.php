@@ -27,10 +27,15 @@ if (!empty($category)) {
 
 // WP Query
 $recent_posts = new WP_Query($args);
+
+// Generate a unique ID using the ACF row index to ensure it remains consistent in the loop
+$unique_id = 'recent-news-' . get_row_index();
 ?>
 
-<section class="recent-news" itemscope itemtype="https://schema.org/Blog">
-    <h2>Recent Posts</h2>
+<section class="recent-news" itemscope itemtype="https://schema.org/Blog" id="<?php echo esc_attr($unique_id); ?>">
+    <?php if (get_sub_field('heading')) : ?>
+        <h2><?php echo esc_html(get_sub_field('heading')); ?></h2>
+    <?php endif; ?>
     <div class="recent-news__cards">
 
         <?php
@@ -43,7 +48,7 @@ $recent_posts = new WP_Query($args);
                     if (has_post_thumbnail()) :
                         $image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                     else :
-                        $image_url = get_template_directory_uri() . '/images/darkstar-media-logo-1 copy.webp';
+                        $image_url = get_template_directory_uri() . '/images/Suzanna-Derewicz-logo-square.png';
                     endif;
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>"

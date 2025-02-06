@@ -1,14 +1,14 @@
 /* Colors */
-$light-blue-color: #608dc6;
-$blue-color: #043470;
-$dark-blue-color: #022045;
-$orange-color: #f7941d;
+$light-blue-color: #C3AEE0;
+$blue-color: #2E2E7A;
+$dark-blue-color: #0C0C3D;
+$orange-color: #AD6A30;
 $dark-grey: #494949;
-$very-orange-color: #f5dfc5;
+$very-light-orange: #EFE4DC;
 
 
-$btn-yellow-dark: rgba(192, 168, 57, 1);
-$btn-yellow-light: rgba(235, 205, 70, 1);
+$btn-yellow-dark: #877354;
+$btn-yellow-light: #AD6A30;
 $light-grey: #ccc;
 $very-light-grey: #e7e7e7;
 $drop-shadow: #c6c6c6;
@@ -20,3 +20,9 @@ $vertical-tablet: 768px;
 $menu-breakpoint: 900px;
 $horizontal-tablet: 1024px;
 $small-desktop: 1280px;
+
+// Fonts
+$body-font: "SourceSerif", serif;
+$heading-font: "OpenSans", sans-serif;
+$body-copy: 400 18px/26px $body-font;
+

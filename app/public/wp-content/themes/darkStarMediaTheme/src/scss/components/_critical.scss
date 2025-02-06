@@ -1,0 +1,20 @@
+@use 'theme' as *; //  This makes all theme variables available!
+
+// Load only essential (above-the-fold) styles
+@use 'fonts';
+@use 'reset';
+@use 'header';
+@use 'nav';
+@use 'breadcrumbs';
+@use 'buttons';
+@use 'cards';
+@use 'content';
+@use 'portfolio';
+@use 'recent-news';
+@use 'quote';
+@use 'simple-content';
+@use 'two-column-content';
+@use 'blog';
+@use 'reviews';
+@use 'toc';
+

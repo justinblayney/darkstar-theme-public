@@ -383,3 +383,63 @@ function add_custom_schema_to_head()
 		}
 	}
 }
+
+
+// Disable REST API links in the head
+remove_action('wp_head', 'rest_output_link_wp_head');
+// Disable REST API link headers
+remove_action('template_redirect', 'rest_output_link_header', 11);
+// Disable oEmbed discovery links
+remove_action('wp_head', 'wp_oembed_add_discovery_links');
+
+
+
+/**
+ * Register a Custom Post Type: Reviews
+ *
+ * This function registers a custom post type called "Reviews" with support for
+ * title, editor, thumbnail, excerpt, and custom fields. It is publicly queryable,
+ * has an archive, and is enabled for the WordPress REST API.
+ *
+ * @package darkStarMediaTheme
+ * @since 1.0.0
+ */
+
+function custom_reviews_cpt()
+{
+	$labels = array(
+		'name'               => _x('Reviews', 'post type general name', 'textdomain'),
+		'singular_name'      => _x('Review', 'post type singular name', 'textdomain'),
+		'menu_name'          => _x('Reviews', 'admin menu', 'textdomain'),
+		'name_admin_bar'     => _x('Review', 'add new on admin bar', 'textdomain'),
+		'add_new'            => __('Add New', 'textdomain'),
+		'add_new_item'       => __('Add New Review', 'textdomain'),
+		'new_item'           => __('New Review', 'textdomain'),
+		'edit_item'          => __('Edit Review', 'textdomain'),
+		'view_item'          => __('View Review', 'textdomain'),
+		'all_items'          => __('All Reviews', 'textdomain'),
+		'search_items'       => __('Search Reviews', 'textdomain'),
+		'not_found'          => __('No reviews found.', 'textdomain'),
+		'not_found_in_trash' => __('No reviews found in Trash.', 'textdomain')
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array('slug' => 'reviews'),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'menu_icon'          => 'dashicons-star-filled',
+		'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+		'show_in_rest'       => true, // Enables Gutenberg support
+	);
+
+	register_post_type('review', $args);
+}
+add_action('init', 'custom_reviews_cpt');

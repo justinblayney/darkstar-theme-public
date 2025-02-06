@@ -1,8 +1,8 @@
-@import 'components/theme';
+@use 'theme' as *;
 /* ///////// FOOTER  ////////////  */
 
 .footer-call {
-	background-color: $very-light-grey;
+	background-color: $very-light-orange;
 	border-bottom: 3px solid white;
 	width: 100%;
 
@@ -22,7 +22,7 @@
 	
 		span {
 			color: black;
-			font-family: 'Raleway', sans-serif;
+			font-family: $heading-font;
 			font-size: 24px;
 			font-weight: 700;
 			line-height: 40px;
@@ -36,8 +36,8 @@
 		}
 	
 		a {
-			color: $orange-color;
-			font-family: 'Raleway',sans-serif;;
+			color: $blue-color;
+			font-family: 'OpenSans', sans-serif;
 			font-size: 36px;
 			font-weight: 700;
 			line-height: 30px;
@@ -201,6 +201,7 @@
 }
 
 .site-info {
+	font-family: 'OpenSans', sans-serif;
     margin: 10px auto;
     text-align: center;
     font-size: 10px;

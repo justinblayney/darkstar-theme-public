@@ -1,12 +1,18 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  Simple Content   //////////////////*/
 .quote {
     background-color: $light-blue-color;
-    display: grid;
-    justify-content: center;
     margin: 40px 0;
     width: 100%;
+
+    h2 {
+        display: block;
+        padding: 0 10px 10px;
+        margin: 20px auto 0;
+        max-width: 1180px;  
+        text-align: left;
+    }
 
     &__inner {
         color: $blue-color;
@@ -16,6 +22,7 @@
         font-weight: 400;
         grid-template-columns: 50px auto 50px;
         line-height: 30px;
+        justify-content: center;
         margin: 0 auto;
         max-width: 1180px;
         padding: 30px 10px;

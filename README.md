@@ -47,4 +47,12 @@ $table_prefix = 'wp_';
 - This repository is a public sample and does not include sensitive data or configuration files.
 
 
-Feel free to explore the code and adapt it for your own projects!
+- Feel free to explore the code and adapt it for your own projects!
+
+## Feb 6 2025 updates
+- Integrated a TOC into the ACF flex components
+- Added a Review CTP with its own TOC
+- Added "gulp-sass": "^6.0.0", and adjusted SCSS to match
+- removed WCK Plugin
+
+---

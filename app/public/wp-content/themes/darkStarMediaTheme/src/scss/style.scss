@@ -10,19 +10,4 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: gray, light, two-columns, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, sticky-post,  theme-options, threaded-comments, translation-ready
 */
 
-@import 'components/reset';
-@import 'components/theme';
-@import 'components/fonts';
-@import 'components/header';
-@import 'components/nav';
-@import 'components/breadcrumbs';
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/content';
-@import 'components/portfolio';
-@import 'components/recent-news';
-@import 'components/quote';
-@import 'components/simple-content';
-@import 'components/two-column-content';
-@import 'components/blog';
-@import 'components/reviews';
+@use 'components/critical';

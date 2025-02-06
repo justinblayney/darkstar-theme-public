@@ -1,5 +1,13 @@
-<section>
+<?php
+// Generate a unique ID using the ACF row index to ensure it remains consistent in the loop
+$unique_id = 'banner-' . get_row_index();
+?>
+<section id="<?php echo esc_attr($unique_id); ?>">
+
 	<div class="wrap-carousel container">
+		<?php if (get_sub_field('heading')) : ?>
+			<h2><?php echo esc_html(get_sub_field('heading')); ?></h2>
+		<?php endif; ?>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
 			<!-- data-ride="carousel"  starts slider automatically -->

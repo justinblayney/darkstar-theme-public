@@ -64,8 +64,8 @@
 
             <div class="header-logo">
                 <a href="/">
-                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2024/11/darkstar-media-logo.jpg"
-                        width="90" height="55" alt="Darkstar Media Logo Web Design" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Suzanna-Derewicz-logo.svg"
+                        width="200" height="72" alt="Suzanna Derewicz, Registered Psychotherapist Logo" />
                 </a>
             </div>
 

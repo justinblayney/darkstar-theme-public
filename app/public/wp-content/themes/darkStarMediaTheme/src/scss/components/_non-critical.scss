@@ -1,0 +1,8 @@
+@use 'theme' as *; //  Ensures theme variables are available
+
+// Load only non-critical styles
+@use 'carousel';
+@use 'forms';
+@use 'testimonial';
+@use 'faqs';
+@use 'footer';

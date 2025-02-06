@@ -1,4 +1,4 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  cards Content   //////////////////*/
 .cards-wrap {
@@ -6,6 +6,13 @@
     display: block;
     margin: 20px 0;
     padding: 20px 0;
+
+    h2 {
+        display: block;
+        padding: 0 10px 10px;
+        margin: 20px auto 0;
+        max-width: 1180px;  
+    }
 
     .cards {
         display: flex;

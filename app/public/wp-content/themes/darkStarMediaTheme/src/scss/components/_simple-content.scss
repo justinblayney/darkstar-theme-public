@@ -1,8 +1,15 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  Simple Content   //////////////////*/
 .simple-content {
     padding: 5px 0 20px;
+
+    h2 {
+        display: block;
+        padding: 0 10px 10px;
+        margin: 20px auto 0;
+        max-width: 1180px;  
+    }
 
     &__wrap {
         padding: 0 10px;

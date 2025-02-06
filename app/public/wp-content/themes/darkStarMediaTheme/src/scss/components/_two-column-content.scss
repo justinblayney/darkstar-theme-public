@@ -1,22 +1,33 @@
-@import 'components/theme';
+@use 'theme' as *;
 
 /* //////////////////  Simple Content   //////////////////*/
 .two-column-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 10px;
-    margin: 40px auto 0;
-    max-width: 1180px;  
+    padding: 5px 0 20px;
 
-    @media (min-width: $vertical-tablet) { 
-        gap: 30px;
-        grid-template-columns: 1fr 1fr;
-
-        &:first-of-type {
-            padding-right: 10px;
-        }
-        &:last-of-type {
-            padding-left: 10px;
-        }
+    h2 {
+        display: block;
+        padding: 0 10px 10px;
+        margin: 20px auto 0;
+        max-width: 1180px;  
     }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        margin: 10px auto 0;
+        max-width: 1180px;  
+
+        @media (min-width: $vertical-tablet) { 
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+    
+            &:first-of-type {
+                padding-right: 10px;
+            }
+            &:last-of-type {
+                padding-left: 10px;
+            }
+        }
+    }  
 }
